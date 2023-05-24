@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+  </head>
+  <body>
+    <section class="form-control mt-3 my-3 " style="width: 30%; height: 30%; margin: 10%; background-color: darkgoldenrod; padding-left: 5%;">
+        <div style="color: red; text-align: center;"><h1>My calculator</h1></div>
+        <div class="container-fluid">
+            <div class="row">
+
+                <input type="text" id="myInput" class="form-control my-3 col-3  shadow-sm " style="width: 50%
+                ;"  />
+            </div>
+        </div>
+   
+    <section style="height: 70%; width: 70%">
+      <div>
+        <button
+          onclick="display('1')"
+          style="background-color: blue; color: red"
+          class="btn my-3 display-flex"
+        >
+          1
+        </button>
+        <button
+          style="background-color: blue; color: red"
+          onclick="display('2')"
+          class="btn my-3 display-flex"
+        >
+          2
+        </button>
+        <button
+          onclick="display('3')"
+          style="background-color: blue; color: red"
+          class="btn my-3"
+        >
+          3
+        </button>
+        <button
+          onclick="display('4')"
+          style="background-color: blue; color: red"
+          class="btn my-3 display-flex"
+        >
+          4
+        </button>
+      </div>
+      <div>
+        
+        <button
+          onclick="display('5')"
+          style="background-color: blue; color: red"
+          class="btn my-3 display-flex"
+        >
+          5
+        </button>
+        <button
+          onclick="display('6')"
+          style="background-color: blue; color: red"
+          class="btn my-3 display-flex"
+        >
+          6
+        </button> 
+         <button
+          onclick="display('7')"
+          style="background-color: blue; color: red"
+          class="btn my-3 display-flex"
+        >
+          7
+        </button>
+        <button
+          onclick="display('8')"
+          style="background-color: blue; color: red"
+          class="btn my-3 display-flex"
+        >
+          8
+        </button>
+       
+      </div>
+      <div>
+       <button
+          onclick="display('9')"
+          style="background-color: blue; color: red"
+          class="btn my-3 display-flex"
+        >
+          9
+        </button>
+        <button
+          onclick="display('0')"
+          style="background-color: blue; color: red"
+          class="btn my-3 display-flex"
+        >
+          0
+        </button>
+        <button
+          onclick="myInput.value+= '+'"
+          style="background-color: blue; color: red"
+          class="btn my-3 display-flex"
+        >
+          +
+        </button>
+        <button
+          onclick="myInput.value+= '*'"
+          style="background-color: blue; color: red"
+          class="btn my-3 display-flex"
+        >
+          x
+        </button>
+      </div>
+
+      <div>
+        <button
+          onclick="myInput.value+= '/'"
+          style="background-color: blue; color: red"
+          class="btn my-3 display-flex"
+        >
+          /
+        </button>
+        <button
+          onclick="myInput.value+= '-'"
+          style="background-color: blue; color: red"
+          class="btn my-3 display-flex"
+        >
+          -
+        </button>
+        <button
+          onclick="myInput.value= eval(myInput.value)"
+          style="background-color: blue; color: red"
+          class="btn my-3 display-flex"
+        >
+          =
+        </button>
+      </div>
+      <div>
+        <button
+          onclick=" display('c')"
+          style="background-color: blue; color: red"
+          class="btn my-3 display-flex"
+        >
+          C
+        </button>
+        <button
+          onclick="display('ac')"
+          style="background-color: blue; color: red"
+          class="btn my-3 display-flex"
+        >
+          AC
+        </button>
+      </div>
+    </section>
+</section>
+
+    <script>
+      function display(parameter) {
+        myInput.value += parameter;
+      }
+    </script>
+  </body>
+</html>
